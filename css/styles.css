@@ -1,0 +1,45 @@
+h1{
+    text-align: center;
+}
+td {
+    padding-left: 7px;
+    min-width: 80px;
+}
+body{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+.main_info__image {
+    max-width: 200px;
+    height: auto;
+}
+.contacts_block__logos{
+    padding-right: 20px;
+    max-width: 40px;
+    height: auto;
+}
+.main_info__cols{
+    font-weight: bold;
+}
+.contacts{
+    min-width: 50px;
+}
+
+.lang_selector2_flag{
+    padding-right: 10px;
+    max-width: 40px;
+    height: auto;
+}
+
+.lang_selector2{
+    padding-top: 10px;
+    text-align: right;
+}
+.lang_selector1{
+    text-align: right;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}

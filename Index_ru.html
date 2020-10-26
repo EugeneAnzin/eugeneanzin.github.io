@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="RU">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=2.0" />
+  <title>Мое резюме</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!--Switching between en/ru CV via select tag and event onchange-->
+  <div class="lang_selector1">
+    <select id="lang_selector1__select" class="lang_selector1__select" onchange=customEvent()>
+      <option value="index.html">EN</option>
+      <option value="index_ru.html" selected>RU</option>
+    </select>
+  </div>
+  <!--Switching between en/ru CV via image links-->
+  <div class="lang_selector2">
+    <a href="index.html"><img class="lang_selector2_flag" src="img/en_flag.png" alt="english flag" /></a>
+    <a href="Index_ru.html">
+      <img class="lang_selector2_flag" src="img/ru_flag.png" alt="russian flag" />
+    </a>
+  </div>
+  <!--Block with Main info with tags h1, table (tr, td, img)-->
+  <div class="main_info">
+    <h1>Резюме</h1>
+    <!--Table with using rowspan attribute-->
+    <table>
+      <tr>
+        <td class="main_info__cols">Имя:</td>
+        <td>Анзин Евгений</td>
+        <td rowspan="3">
+          <img class="main_info__image" src="img/YA.jpg" alt="My_image" />
+        </td>
+      </tr>
+      <tr>
+        <td class="main_info__cols">Дата рождения:</td>
+        <td>7/5/1988</td>
+      </tr>
+      <tr>
+        <td class="main_info__cols">Адрес:</td>
+        <td>Николаев, ул.Крылова 44</td>
+      </tr>
+    </table>
+  </div>
+  <!--Career objective block with tags: h2 and p-->
+  <div class="objectives">
+    <h2>Цель:</h2>
+    <p>Устроиться на работу “Junior Front End developer”</p>
+  </div>
+  <!--Proffesional skills block with tags: ul, ol, li, h2 and h3-->
+  <div class="prof_skills">
+    <h2>Профессиональные навыки:</h2>
+    <h3>Практические навыки:</h3>
+    <ul>
+      <li>Навык 1</li>
+      <li>Навык 2</li>
+      <li>Навык 3</li>
+    </ul>
+    <h3>Теоретические зания:</h3>
+    <ol>
+      <li>Навык 1</li>
+      <li>Навык 2</li>
+      <li>Навык 3</li>
+      <li>Навык 4</li>
+      <li>Навык 5</li>
+    </ol>
+  </div>
+  <!--Education block with tags: p, strong, ul, li, h2-->
+  <div class="my_education">
+    <h2>Образование:</h2>
+    <div>
+      <p><strong>Высшее</strong></p>
+      <ul>
+        <li>
+          09.2005 – 02.2011 <br />
+          <strong>Национальный университет имени адмирала Макарова</strong>
+          <br />
+          Электронные системы (специалист).
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--Work expirience block with tags: h2, p, em-->
+  <div class="work_exp">
+    <h2>Опыт работы:</h2>
+    <div><em>Моя первая работа</em></div>
+    <div><em>Моя вторая работа</em></div>
+  </div>
+  <!--BlockQuote block-->
+  <h2>Любимая цитата:</h2>
+  <blockquote>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus
+    temporibus nisi accusantium eligendi quas inventore deleniti, quidem quae
+    et impedit.
+  </blockquote>
+  <!--Contacts block with tags: p, strong, div, a, img-->
+  <div class="contacts">
+    <h2>Контакты:</h2>
+    <div class="contacts_block">
+      <a href="tel:+380931330848">
+        <img class="contacts_block__logos" src="img/phone_logo.jpg" alt="phone logo" />
+      </a>
+      <a href="skype:sick_puppie88?chat">
+        <img class="contacts_block__logos" src="img/Skype-logo.jpg" alt="Skype logo" />
+      </a>
+      <a href="mailto:st.jimmy.88.07@gmail.com">
+        <img class="contacts_block__logos" src="img/email_logo.png" alt="email logo" />
+      </a>
+    </div>
+  </div>
+  <script src="js/eventscript.js"></script>
+</body>
+
+</html>
